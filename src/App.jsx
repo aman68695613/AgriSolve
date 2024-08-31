@@ -1,22 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import IndexPage from './pages/IndexPage'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import MarketPlace from './pages/MarketPlace';
+import AI from './pages/AI';
+import Community from './pages/Community';
+import Profile from './pages/Profile';
+
 
 function App() {
-
-
   return (
-    
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-          <Route path="/login" element={<IndexPage />} />
+        <Route path='/' element={<Home/>} />
+        <Route path='/marketplace' element={<MarketPlace />} />
+        <Route path='/ai' element={<AI/>} />
+        <Route path='/community' element={<Community />} />
+        <Route path='/profile' element={<Profile/>} />
       </Routes>
-      </BrowserRouter>
-    
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
