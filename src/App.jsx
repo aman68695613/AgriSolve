@@ -5,6 +5,7 @@ import MarketPlace from './pages/MarketPlace';
 import AI from './pages/AI';
 import Community from './pages/Community';
 import Profile from './pages/Profile';
+import Apply from './pages/Apply';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/ai' element={<AI/>} />
         <Route path='/community' element={<Community />} />
         <Route path='/profile' element={<Profile/>} />
+        <Route path='/apply' element={<Apply/>} />
       </Routes>
     </BrowserRouter>
   );
